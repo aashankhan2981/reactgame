@@ -65,10 +65,10 @@ export const Table = () => {
     arr[1] = id2
     setarr(arr)
     let newvalue = values.map((value,index)=>{
-      if(value == arr[0]){
+      if(value === arr[0]){
        return values[values.indexOf(value)] =arr[1]
       }
-      else if(value==arr[1]){
+      else if(value===arr[1]){
        return values[values.indexOf(value)] =arr[0]
   
       }
