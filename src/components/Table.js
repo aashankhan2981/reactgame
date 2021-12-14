@@ -111,7 +111,8 @@ export const Table = () => {
             type="number"
             name="input"
             placeholder="Enter a number"
-            className="outline-none h-8 "
+            className="outline-none h-8 w-40 "
+             min={2} max={8}
           />
           <button
             type="submit"
