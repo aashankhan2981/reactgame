@@ -15,4 +15,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+.grid-rows-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-rows-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-rows-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.grid-rows-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
