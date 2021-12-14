@@ -57,18 +57,20 @@ export const Table = () => {
     arr[0] = id
   }
   const dragging = (e)=>{
+    
     e.preventDefault()
     
   }
   const drop = (e)=>{
+    console.log("dropped")
     let id2= Number(e.target.id)
     arr[1] = id2
     setarr(arr)
     let newvalue = values.map((value,index)=>{
-      if(value === arr[0]){
+      if(value == arr[0]){
        return values[values.indexOf(value)] =arr[1]
       }
-      else if(value===arr[1]){
+      else if(value==arr[1]){
        return values[values.indexOf(value)] =arr[0]
   
       }
