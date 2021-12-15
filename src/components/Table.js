@@ -1,3 +1,4 @@
+import { stat } from "fs";
 import React, { useReducer,useEffect, useRef } from "react";
 export const Table = () => {
   let val = []
@@ -35,7 +36,7 @@ export const Table = () => {
 }
   const [state,dispatch]=useReducer(reducer,{values:val,row:row1,arr:[],checkloop:check})
   useEffect(() => {
-
+    reference.current.value = state.row
     localStorage.setItem("values",JSON.stringify(state.values))
     localStorage.setItem("row",JSON.stringify(state.row))
   }, [state.values,state.row])
